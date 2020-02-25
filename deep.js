@@ -1,4 +1,5 @@
 /**
+//il problema è che se in obj2 c'è un oggetto più lungo di obj1 l'algoritmo non confronta gli elementi in più di obj2
 var obj1 = {
     a: 2,
     z: 3,
