@@ -15,6 +15,12 @@ function reverseArray(a) {
     }
     return b;
 }
+function reverseArrayDec(a) {
+    const y = (k, b) => a[a.length - b - 1]
+    a = a.map(y)
+    return a
+}
+
 
 console.log(reverseArray(a))
 console.log(reverseArrayInPlace(a))
