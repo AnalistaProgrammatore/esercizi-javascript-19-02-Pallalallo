@@ -1,5 +1,4 @@
 /**
-//il problema è che se in obj2 c'è un oggetto più lungo di obj1 l'algoritmo non confronta gli elementi in più di obj2
 var obj1 = {
     a: 2,
     z: 3,
@@ -31,6 +30,7 @@ function deepC(obj1, obj2) {
 
     //per ogni chiave k1 di obj1 controlla se i valori sono uguali o se sono oggetti uguali con la chiamata ricorsiva
     else if (((typeof obj1) === 'object') && ((typeof obj2) === 'object')) {
+        if(Object.keys(obj1).length!=Object.keys(obj2).length) return false
         for (var k1 in obj1) {
             o = deepC(obj1[k1], obj2[k1]);
             if (!o) return false;
